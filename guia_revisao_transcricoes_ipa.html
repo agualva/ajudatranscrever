@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Revisão de Transcrições IPA</title>
+    <style>
+        @media print {
+            body { margin: 1cm; }
+            .no-print { display: none; }
+            .page-break { page-break-before: always; }
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.4;
+            color: #000;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 1cm;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .header .meta {
+            font-size: 10px;
+            margin-top: 5px;
+            color: #333;
+        }
+        
+        h2 {
+            background: #000;
+            color: white;
+            padding: 8px;
+            margin: 20px 0 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        h3 {
+            border-left: 4px solid #000;
+            padding-left: 10px;
+            margin: 15px 0 8px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        h4 {
+            font-size: 12px;
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+            text-decoration: underline;
+        }
+        
+        .etapa {
+            border: 2px solid #000;
+            margin: 15px 0;
+            padding: 15px;
+        }
+        
+        .etapa-titulo {
+            background: #000;
+            color: white;
+            margin: -15px -15px 10px -15px;
+            padding: 8px 15px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .materiais-box {
+            border: 1px solid #666;
+            background: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .checklist {
+            background: #f0f0f0;
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        .checklist h4 {
+            margin-top: 0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .exemplo {
+            border-left: 3px solid #666;
+            padding-left: 15px;
+            margin: 10px 0;
+            font-style: italic;
+            font-size: 11px;
+        }
+        
+        .aviso {
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 15px 0;
+            background: #f9f9f9;
+        }
+        
+        .aviso strong {
+            font-size: 14px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 11px;
+        }
+        
+        th, td {
+            border: 1px solid #000;
+            padding: 6px;
+            text-align: left;
+        }
+        
+        th {
+            background: #e0e0e0;
+            font-weight: bold;
+        }
+        
+        .small-text {
+            font-size: 10px;
+        }
+        
+        ul, ol {
+            margin: 5px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 2px 0;
+        }
+        
+        .workflow {
+            background: #f5f5f5;
+            border: 2px solid #000;
+            padding: 10px;
+            margin: 15px 0;
+        }
+        
+        .codigo-box {
+            background: #f0f0f0;
+            border: 1px solid #333;
+            font-family: monospace;
+            padding: 8px;
+            margin: 8px 0;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>GUIA DE REVISÃO DE TRANSCRIÇÕES IPA</h1>
+        <h2 style="background: none; color: black; font-size: 14px; margin: 5px 0; padding: 0;">Correção de Transcrições Automáticas para Análise Fenomenológica</h2>
+        <div class="meta">
+            <strong>Conversa:</strong> Orientadora de Dissertação - Revisão de Transcrições<br>
+            <strong>Data_criacao:</strong> 24-08-2025 | <strong>Hora_criacao:</strong> 17:45:12 | <strong>Versao:</strong> 1.0.0<br>
+            <strong>Fonte:</strong> Smith, Flowers & Larkin (2021) + Metodologia IPA para transcrições
+        </div>
+    </div>
+
+    <div class="aviso">
+        <strong>⚠️ PROBLEMA IDENTIFICADO:</strong><br>
+        O TurboScribe removeu elementos ESSENCIAIS para IPA: pausas, hesitações ("hum", "ah"), repetições e interjeições. Estes elementos são fundamentais para distinguir entre discurso profissional automático e experiência vivida genuína.
+    </div>
+
+    <h2>Preparação do Material de Trabalho</h2>
+
+    <div class="materiais-box">
+        <h4>MATERIAIS NECESSÁRIOS:</h4>
+        <ul>
+            <li><strong>Transcrições impressas do TurboScribe</strong> (uma por participante)</li>
+            <li><strong>Gravações áudio</strong> (telemóvel, computador, ou leitor de áudio)</li>
+            <li><strong>Auscultadores</strong> (recomendado para ouvir detalhes)</li>
+            <li><strong>Canetas de 3 cores diferentes</strong> (ex: preta, azul, vermelha)</li>
+            <li><strong>Marcadores</strong> para destacar secções</li>
+            <li><strong>Folhas extra</strong> para notas marginais</li>
+            <li><strong>Cronómetro ou app</strong> para marcar timestamps</li>
+        </ul>
+    </div>
+
+    <div class="materiais-box">
+        <h4>ORGANIZAÇÃO DO ESPAÇO:</h4>
+        <ul>
+            <li><strong>Mesa ampla:</strong> Para espalhar transcrições</li>
+            <li><strong>Boa iluminação:</strong> Para leitura prolongada</li>
+            <li><strong>Ambiente silencioso:</strong> Para ouvir gravações com atenção</li>
+            <li><strong>Água/café:</strong> Processo pode demorar 2-3h por entrevista</li>
+        </ul>
+    </div>
+
+    <h2>Sistema de Notação IPA</h2>
+
+    <h3>CONVENÇÕES DE TRANSCRIÇÃO PARA IPA:</h3>
+    <table>
+        <tr>
+            <th style="width: 20%">Elemento</th>
+            <th style="width: 25%">Notação</th>
+            <th style="width: 30%">Exemplo</th>
+            <th style="width: 25%">Significado IPA</th>
+        </tr>
+        <tr>
+            <td><strong>Pausa Curta</strong><br>(1-2 segundos)</td>
+            <td>(.)</td>
+            <td>"É difícil (.) trabalhar com eles"</td>
+            <td>Hesitação, busca de palavras</td>
+        </tr>
+        <tr>
+            <td><strong>Pausa Média</strong><br>(2-4 segundos)</td>
+            <td>(..)</td>
+            <td>"Sinto-me (..) completamente perdido"</td>
+            <td>Processamento emocional</td>
+        </tr>
+        <tr>
+            <td><strong>Pausa Longa</strong><br>(4+ segundos)</td>
+            <td>(...)</td>
+            <td>"Quando ela disse isso (...) foi chocante"</td>
+            <td>Impacto emocional forte</td>
+        </tr>
+        <tr>
+            <td><strong>Hesitações</strong></td>
+            <td>hum, ah, é..., mm</td>
+            <td>"Hum... não sei se estou preparado"</td>
+            <td>Incerteza, vulnerabilidade</td>
+        </tr>
+        <tr>
+            <td><strong>Repetições</strong></td>
+            <td>Palavra- palavra</td>
+            <td>"É muito muito difícil trabalhar"</td>
+            <td>Ênfase, intensidade emocional</td>
+        </tr>
+        <tr>
+            <td><strong>Palavra Incompleta</strong></td>
+            <td>Palavra-</td>
+            <td>"Estava comple- muito confuso"</td>
+            <td>Autocorreção, reformulação</td>
+        </tr>
+        <tr>
+            <td><strong>Fala Sobreposição</strong></td>
+            <td>[sobreposta]</td>
+            <td>P: "Sinto [exatamente] isso também"</td>
+            <td>Empatia, validação mútua</td>
+        </tr>
+        <tr>
+            <td><strong>Ênfase/Tom</strong></td>
+            <td>MAIÚSCULAS</td>
+            <td>"NUNCA tinha sentido isto"</td>
+            <td>Intensidade, surpresa</td>
+        </tr>
+        <tr>
+            <td><strong>Tom Baixo</strong></td>
+            <td>°palavra°</td>
+            <td>"°talvez não consiga°"</td>
+            <td>Vulnerabilidade, dúvida</td>
+        </tr>
+        <tr>
+            <td><strong>Riso/Choro</strong></td>
+            <td>((ação))</td>
+            <td>"É frustrante ((riso nervoso))"</td>
+            <td>Mecanismo de defesa, emoção</td>
+        </tr>
+    </table>
+
+       <div class="etapa">
+        <div class="etapa-titulo">ETAPA 1: PREPARAÇÃO E PRIMEIRA ESCUTA</div>
+        
+        <h4>1.1 Organização por Participante</h4>
+        <ol>
+            <li><strong>Criar pasta por entrevista:</strong> PSI_001, PSI_002, etc.</li>
+            <li><strong>Imprimir transcrição TurboScribe:</strong> Espaço duplo entre linhas</li>
+            <li><strong>Numerar linhas:</strong> De 5 em 5 (linha 5, 10, 15...)</li>
+            <li><strong>Preparar gravação:</strong> Testar qualidade áudio</li>
+        </ol>
+
+        <h4>1.2 Primeira Escuta Integral</h4>
+        <div class="workflow">
+            <strong>OBJETIVO:</strong> Familiarização geral, sem correções ainda<br>
+            <strong>FOCO:</strong> Ritmo geral, momentos emocionais, padrões de fala
+        </div>
+        <ul>
+            <li><strong>Ouvir gravação completa</strong> seguindo transcrição impressa</li>
+            <li><strong>Marcar com X</strong> locais com erros óbvios (não corrigir ainda)</li>
+            <li><strong>Assinalar com ★</strong> momentos emocionalmente intensos</li>
+            <li><strong>Anotar impressão geral</strong> no topo da primeira página</li>
+        </ul>
+
+        <div class="checklist">
+            <h4>✓ Checklist Etapa 1:</h4>
+            <ul>
+                <li>□ Transcrição impressa e numerada</li>
+                <li>□ Gravação testada e funcional</li>
+                <li>□ Primeira escuta completa realizada</li>
+                <li>□ Erros óbvios marcados com X</li>
+                <li>□ Momentos intensos marcados com ★</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="etapa">
+        <div class="etapa-titulo">ETAPA 2: CORREÇÃO SISTEMÁTICA - SECÇÃO POR SECÇÃO</div>
+        
+        <h4>2.1 Divisão em Secções de Trabalho</h4>
+        <div class="workflow">
+            <strong>ESTRATÉGIA:</strong> Trabalhar em blocos de 3-5 minutos de gravação<br>
+            <strong>MÉTODO:</strong> Escuta repetida + correção imediata + verificação
+        </div>
+
+        <h4>2.2 Processo de Correção Detalhada</h4>
+        
+        <div class="materiais-box">
+            <h4>SISTEMA DE 3 CORES:</h4>
+            <ul>
+                <li><strong>CANETA PRETA:</strong> Correções de palavras/frases erradas</li>
+                <li><strong>CANETA AZUL:</strong> Adição de pausas, hesitações, repetições</li>
+                <li><strong>CANETA VERMELHA:</strong> Elementos emocionais (riso, suspiros, tom)</li>
+            </ul>
+        </div>
+
+        <h4>2.3 Processo por Secção (3-5 minutos):</h4>
+        <ol>
+            <li><strong>ESCUTA 1 (Caneta Preta):</strong>
+                <ul>
+                    <li>Focar em correção de palavras erradas</li>
+                    <li>Verificar nomes, termos técnicos</li>
+                    <li>Corrigir sequência lógica das frases</li>
+                </ul>
+            </li>
+            <li><strong>ESCUTA 2 (Caneta Azul):</strong>
+                <ul>
+                    <li>Adicionar pausas: (.), (..), (...)</li>
+                    <li>Inserir hesitações: "hum", "ah", "é..."</li>
+                    <li>Marcar repetições: "muito muito"</li>
+                    <li>Notar palavras incompletas: "comple-"</li>
+                </ul>
+            </li>
+            <li><strong>ESCUTA 3 (Caneta Vermelha):</strong>
+                <ul>
+                    <li>Marcar mudanças de tom: MAIÚSCULAS, °baixo°</li>
+                    <li>Adicionar elementos emocionais: ((riso)), ((suspiro))</li>
+                    <li>Notar sobreposições de fala: [simultâneo]</li>
+                </ul>
+            </li>
+            <li><strong>VERIFICAÇÃO FINAL:</strong>
+                <ul>
+                    <li>Ler secção corrigida em voz alta</li>
+                    <li>Verificar se "soa" como a gravação</li>
+                    <li>Ajustar se necessário</li>
+                </ul>
+            </li>
+        </ol>
+
+        <div class="exemplo">
+            <strong>EXEMPLO DE CORREÇÃO:</strong><br><br>
+            <strong>TurboScribe (Original):</strong><br>
+            "É muito difícil trabalhar com estes pacientes porque eles são manipulativos e eu não sei como lidar com isso."<br><br>
+            
+            <strong>Versão Corrigida IPA:</strong><br>
+            "É muito (..) muito difícil trabalhar com estes pacientes porque eles são... hum (...) manipulativos ((tom baixo)) e eu °não sei° como lidar com isso ((suspiro))."
+        </div>
+
+        <div class="checklist">
+            <h4>✓ Sinais de que a Correção está Correta:</h4>
+            <ul>
+                <li>□ Consegues "ouvir" a voz do participante ao ler</li>
+                <li>□ Pausas correspondem aos momentos de silêncio reais</li>
+                <li>□ Hesitações captam momentos de busca por palavras</li>
+                <li>□ Repetições refletem ênfase emocional genuína</li>
+                <li>□ Elementos emocionais são audíveis na gravação</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="etapa">
+        <div class="etapa-titulo">ETAPA 3: VALIDAÇÃO E REFINAMENTO</div>
+        
+        <h4>3.1 Escuta de Validação</h4>
+        <div class="workflow">
+            <strong>OBJETIVO:</strong> Verificar se a transcrição está fenomenologicamente rica<br>
+            <strong>MÉTODO:</strong> Leitura simultânea com áudio completo
+        </div>
+        
+        <ul>
+            <li><strong>Escutar gravação completa</strong> seguindo versão corrigida</li>
+            <li><strong>Identificar discrepâncias</strong> entre áudio e texto</li>
+            <li><strong>Verificar momentos emocionalmente intensos</strong> (marcados com ★)</li>
+            <li><strong>Confirmar que elementos prosódicos estão captados</strong></li>
+        </ul>
+
+        <h4>3.2 Teste de Qualidade IPA</h4>
+        
+        <div class="checklist">
+            <h4>PERGUNTAS CRÍTICAS:</h4>
+            <ul>
+                <li>□ "A transcrição captura COMO a experiência foi comunicada?"</li>
+                <li>□ "Consigo distinguir momentos de discurso profissional vs. experiência vivida?"</li>
+                <li>□ "Pausas e hesitações revelam processamento emocional?"</li>
+                <li>□ "Repetições mostram ênfase ou intensidade?"</li>
+                <li>□ "Elementos emocionais (riso, suspiros) estão marcados?"</li>
+            </ul>
+        </div>
+
+        <h4>3.3 Correções Finais</h4>
+        <ul>
+            <li><strong>Ajustar elementos que não "soam" corretos</strong></li>
+            <li><strong>Verificar consistência do sistema de notação</strong></li>
+            <li><strong>Confirmar numeração de linhas</strong></li>
+            <li><strong>Preparar versão digital limpa</strong> (opcional)</li>
+        </ul>
+    </div>
+
+    <h2>Estratégias Específicas para o Teu Contexto</h2>
+
+    <div class="aviso">
+        <strong>FOCO ESPECIAL - DISTINGUIR DISCURSO PROFISSIONAL vs. EXPERIÊNCIA VIVIDA:</strong><br>
+        A tua análise IPA depende de conseguires identificar quando os participantes estão a falar "como psiquiatras" vs. quando estão a partilhar experiências genuínas.
+    </div>
+
+    <h3>INDICADORES PROSÓDICOS DE EXPERIÊNCIA AUTÊNTICA:</h3>
+    <table>
+        <tr>
+            <th>Indicador</th>
+            <th>O que Procurar</th>
+            <th>Significado IPA</th>
+        </tr>
+        <tr>
+            <td><strong>Pausas longas</strong><br>antes de respostas</td>
+            <td>(...) seguido de mudança de tom</td>
+            <td>Acesso a experiência vivida, não resposta automática</td>
+        </tr>
+        <tr>
+            <td><strong>Autocorreções</strong><br>frequentes</td>
+            <td>"Eu diri- quero dizer, eu sinto que..."</td>
+            <td>Busca por precisão experiencial vs. linguagem técnica</td>
+        </tr>
+        <tr>
+            <td><strong>Hesitações</strong><br>em linguagem técnica</td>
+            <td>"É uma... hum... situação borderline"</td>
+            <td>Tensão entre categorias diagnósticas e experiência</td>
+        </tr>
+        <tr>
+            <td><strong>Mudanças de ritmo</strong><br>na fala</td>
+            <td>Aceleração ou desaceleração súbita</td>
+            <td>Intensidade emocional, desconforto, ou urgência</td>
+        </tr>
+        <tr>
+            <td><strong>Repetições enfáticas</strong></td>
+            <td>"É mesmo mesmo difícil"</td>
+            <td>Necessidade de ser compreendido, intensidade</td>
+        </tr>
+        <tr>
+            <td><strong>Interjeições</strong><br>emocionais</td>
+            <td>((suspiro)), ((riso nervoso))</td>
+            <td>Reações genuínas vs. controlo profissional</td>
+        </tr>
+    </table>
+
+    <h3>IDENTIFICAÇÃO DE PADRÕES CONTRADITÓRIOS:</h3>
+    <div class="workflow">
+        <strong>PROCURAR ESPECIFICAMENTE:</strong>
+        <ul>
+            <li><strong>Discurso técnico</strong> seguido de pausas e linguagem pessoal</li>
+            <li><strong>Afirmações profissionais</strong> contraditas por elementos emocionais</li>
+            <li><strong>Mudanças de pronome</strong> ("nós psiquiatras" → "eu sinto")</li>
+            <li><strong>Transições</strong> de linguagem formal para informal</li>
+        </ul>
+    </div>
+
+    <h2>Controlo de Qualidade Final</h2>
+
+    <div class="checklist">
+        <h4>CHECKLIST DE QUALIDADE POR ENTREVISTA:</h4>
+        <ul>
+            <li>□ <strong>Correção linguística:</strong> Palavras e frases corretas</li>
+            <li>□ <strong>Pausas marcadas:</strong> (.),(..), (...) conforme duração real</li>
+            <li>□ <strong>Hesitações incluídas:</strong> "hum", "ah", "é..." captadas</li>
+            <li>□ <strong>Repetições preservadas:</strong> Ênfases e intensidades mantidas</li>
+            <li>□ <strong>Elementos emocionais:</strong> ((riso)), ((suspiro)), etc. marcados</li>
+            <li>□ <strong>Tons marcados:</strong> MAIÚSCULAS para ênfase, °baixo° para vulnerabilidade</li>
+            <li>□ <strong>Consistência notacional:</strong> Sistema uniforme usado</li>
+            <li>□ <strong>Verificação de momentos ★:</strong> Secções intensas bem captadas</li>
+            <li>□ <strong>Teste de leitura:</strong> Soa como o participante real</li>
+            <li>□ <strong>Numeração de linhas:</strong> Referências claras para análise</li>
+        </ul>
+    </div>
+
+    <div class="aviso">
+        <strong>⚠️ ARMADILHA COMUM:</strong><br>
+        Não excluir elementos que parecem "pouco profissionais" (hesitações, repetições). Estes são os dados MAIS VALIOSOS para distinguir experiência vivida de discursos padronizados.
+    </div>
+
+    <h2>Gestão de Tempo e Processo</h2>
+
+    <table>
+        <tr>
+            <th>Duração da Entrevista</th>
+            <th>Tempo de Correção Estimado</th>
+            <th>Pausas Recomendadas</th>
+        </tr>
+        <tr>
+            <td>30-45 minutos</td>
+            <td>2-3 horas</td>
+            <td>A cada 60 minutos</td>
+        </tr>
+        <tr>
+            <td>45-60 minutos</td>
+            <td>3-4 horas</td>
+            <td>A cada 45 minutos</td>
+        </tr>
+        <tr>
+            <td>60+ minutos</td>
+            <td>4-5 horas</td>
+            <td>A cada 30 minutos</td>
+        </tr>
+    </table>
+
+    <div class="materiais-box">
+        <h4>PLANEAMENTO SUGERIDO:</h4>
+        <ul>
+            <li><strong>1 entrevista por dia:</strong> Máximo para manter qualidade</li>
+            <li><strong>Manhã:</strong> Período de maior concentração</li>
+            <li><strong>Intervalos regulares:</strong> Prevenir fadiga auditiva</li>
+            <li><strong>Validação no dia seguinte:</strong> Perspectiva fresca</li>
+        </ul>
+    </div>
+
+    <h2>Resultado Final Esperado</h2>
+
+    <div class="exemplo">
+        <strong>EXEMPLO DE TRANSCRIÇÃO IPA CORRIGIDA:</strong><br><br>
+        
+        <strong>Linha 127-132:</strong><br>
+        <strong>Investigadora:</strong> Como é que se sente quando um paciente borderline entra no seu consultório?<br><br>
+        
+        <strong>PSI_003:</strong> Hum (...) ((suspiro)) é uma pergunta difícil. Eu °supostamente° deveria dizer que me sinto profissional e preparado ((riso nervoso)) mas (..) mas a verdade é que... (...) sinto logo uma tensão aqui ((indica peito)). É como se o meu corpo soubesse antes de eu pensar. LOGO ali na sala de espera, quando vejo o nome na lista (..) já sei que vai ser... vai ser diferente.
+    </div>
+
+    <div class="aviso">
+        <strong>✅ OBJETIVO ALCANÇADO:</strong><br>
+        Com este processo, terás transcrições fenomenologicamente ricas que te permitirão distinguir entre momentos de discurso profissional automático e acesso genuíno à experiência vivida - essencial para uma análise IPA rigorosa.
+    </div>
+
+    <div class="header" style="margin-top: 30px; border-top: 2px solid #000; border-bottom: none;">
+        <div style="font-size: 10px; text-align: center;">
+            <strong>Este processo é investimento crítico na qualidade da tua análise IPA. Transcrições pobres = análise superficial.</strong>
+        </div>
+    </div>
+</body>
+</html>
